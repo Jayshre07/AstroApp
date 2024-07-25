@@ -1,55 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>TV Screen</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
-        }
-        .carousel, .latest-episodes {
-            display: flex;
-            overflow: hidden;
-            margin: 20px auto;
-            padding: 10px;
-            width: 80%;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .carousel div, .latest-episodes div {
-            min-width: 200px;
-            margin: 0 10px;
-            text-align: center;
-        }
-        .selected {
-            border: 2px solid red;
-            padding: 5px;
-            border-radius: 10px;
-        }
-        .thumbnail {
-            width: 100px;
-            height: 75px;
-        }
-    </style>
-</head>
-<body>
-    <h1>TV Screen</h1>
-    <div class="carousel" id="carousel">
-        <div><img src="https://via.placeholder.com/150/0000FF/FFFFFF?text=Channel+1" alt="Channel 1" class="thumbnail"></div>
-        <div><img src="https://via.placeholder.com/150/FF0000/FFFFFF?text=Channel+2" alt="Channel 2" class="thumbnail"></div>
-        <div><img src="https://via.placeholder.com/150/00FF00/FFFFFF?text=Channel+3" alt="Channel 3" class="thumbnail"></div>
-        <div><img src="https://via.placeholder.com/150/FFFF00/FFFFFF?text=Channel+4" alt="Channel 4" class="thumbnail"></div>
-    </div>
-    <h2>Latest Episodes</h2>
-    <div class="latest-episodes" id="latest-episodes">
-        <div><img src="https://via.placeholder.com/150/FF00FF/FFFFFF?text=Episode+1" alt="Episode 1" class="thumbnail"></div>
-        <div><img src="https://via.placeholder.com/150/00FFFF/FFFFFF?text=Episode+2" alt="Episode 2" class="thumbnail"></div>
-        <div><img src="https://via.placeholder.com/150/FF8800/FFFFFF?text=Episode+3" alt="Episode 3" class="thumbnail"></div>
-        <div><img src="https://via.placeholder.com/150/88FF00/FFFFFF?text=Episode+4" alt="Episode 4" class="thumbnail"></div>
-    </div>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: black;
+        color: #333;
+      }
+      .thumbnail {
+        width: 100px;
+        height: 75px;
+        transition: border 0.3s;
+      }
 
+      .selected {
+        border: 2px solid red;
+        padding: 5px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="Titletext" id="Titletext"></h1>
+    <div class="carousel" id="carousel"></div>
+    <h2 class="Titletext" id="Titletext"></h2>
+    <div class="latest-episodes" id="latest-episodes"></div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
